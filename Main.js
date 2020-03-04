@@ -1,0 +1,13 @@
+import Hotel from "./Hotel.js";
+import Huesped from "./Huesped.js";
+import Reservacion from "./Reservacion.js";
+let hotel = new Hotel("Hail Loki");
+let h1= new Huesped("Karla Sierra","Femenino");
+let h2 = new Huesped("Dylan Villareal","Masculino");
+let r1= new Reservacion(1,new Date(2020,3,2),2);
+let r2 = new Reservacion(2,new Date(2020,3,3),2);
+r1.addHuesped(h1);
+r2.addHuesped(h2);
+hotel.reservaciones.push(r1);
+hotel.reservaciones.push(r2);
+hotel.print();
