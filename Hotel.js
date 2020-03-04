@@ -1,5 +1,5 @@
 import Reservacion from "./Reservacion.js"
-class Hotel{
+export default class Hotel{
     /**
      * 
      * @param {string} nombre 
