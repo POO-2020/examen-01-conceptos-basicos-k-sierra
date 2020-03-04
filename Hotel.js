@@ -16,6 +16,8 @@ class Hotel{
         return HuespedesTotal;
     }
     print(){
-        return(this.print());
+        this.reservaciones.forEach(reservacion=>{
+            reservacion.print();
+        })
     }
 }
