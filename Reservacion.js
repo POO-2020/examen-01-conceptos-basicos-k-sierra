@@ -8,12 +8,12 @@ export default class Reservacion{
      */
     constructor(numeroHabitacion, fechaLlegada, noches){
         this.numeroHabitacion = numeroHabitacion;
-        this.fechaLlegada = fechaLlegada;
+        this.fechaLlegada = new Date;
         this.noches = noches;
         this.huespedes = new Array();
     }
     getFechaFormatoCorto(){
-        return `${this.fechaLlegada.getDate()}/${this.fechaLlegada.getMonth()}/${this.fechaLlegada.getFullYear()}`;
+        return (`${this.fechaLlegada.getDate()}/${this.fechaLlegada.getMonth()}/${this.fechaLlegada.getFullYear()}`);
     }
     addHuesped(huesped){
         this.huespedes.push(huesped);
